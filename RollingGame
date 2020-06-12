@@ -17,7 +17,7 @@ def game():
     roll_again = raw_input("Roll the dices again?").lower()  # input function is used to obtain the user's input
     
                                                              # the user can enter a string in any capitalization 
-  # Restarting the game  
+# Restarting the game  
 game()
 restart = input ("Do you want to restart the game ").lower()
 if restart == "No":
