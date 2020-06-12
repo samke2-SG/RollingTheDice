@@ -1,0 +1,27 @@
+
+
+import random  #used to import random library 
+min = 1        # assign variables with random values
+max = 6
+print "Welcome to my rolling dice simulator "
+
+def game():
+
+ roll_again = "yes"
+ while roll_again == "yes" or roll_again == "y":
+    print "Rolling the dices..."
+    print "The values are...."
+    print random.randint(min, max)          # use the randint to generate a random variable
+    print random.randint(min, max)
+
+    roll_again = raw_input("Roll the dices again?").lower()  # input function is used to obtain the user's input
+    
+                                                             # the user can enter a string in any capitalization 
+  # Restarting the game  
+game()
+restart = input ("Do you want to restart the game ").lower()
+if restart == "No":
+  print "Goodbye"
+elif restart == "Yes":
+  print "Starting a new game"
+game()
